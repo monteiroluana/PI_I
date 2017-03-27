@@ -11,34 +11,61 @@ public class ImparPar {
 
     public static void main(String[] args) {
 
-        Random rng = new Random();
-
         /*Entradas*/
         String usuario = JOptionPane.showInputDialog("Impar / Par");
-        int numero = Integer.parseInt(JOptionPane.showInputDialog("1 ,2 ,3 ,4 ou 5"));
+        int numero = Integer.parseInt(JOptionPane.showInputDialog("1 ou 2"));
 
         /*processamento (1)*/
-        int i = rng.nextInt(5) + 1;
-        int soma = numero + i;
+        Random maquina = new Random();
+        int i = maquina.nextInt(2) + 1;
 
         /*processamento (2)*/
         String resultado = "";
-        if (numero <= 5) {
+        if (numero <= 2) {
 
-            if (soma == 2 || soma == 4 || soma == 6 || soma == 8 || soma == 10) {
-                resultado = "par";
-            } else {
-                resultado = "impar";
+            /*usuario com entrada par*/
+            if (usuario.equals("par") && numero == 1 && i == 1) {
+                resultado = "usuário escolheu 'par' e o nº 1\n";
+                resultado += "máquina escolheu 'impar' e o nº 1\n";
+                resultado += "  Você Ganhou!";
+            } else if (usuario.equals("par") && numero == 2 && i == 2) {
+                resultado = "usuário escolheu 'par' e o nº 2\n";
+                resultado += "máquina escolheu 'impar' e o nº 2\n";
+                resultado += "  Você Ganhou!";
+            } else if (usuario.equals("par") && numero == 2 && i == 1) {
+                resultado = "usuário escolheu 'par' e o nº 2\n";
+                resultado += "máquina escolheu 'impar' e o nº 1\n";
+                resultado += "  Você perdeu!";
+            } else if (usuario.equals("par") && numero == 1 && i == 2) {
+                resultado = "usuário escolheu 'par' e o nº 2\n";
+                resultado += "máquina escolheu 'impar' e o nº 1\n";
+                resultado += "  Você perdeu!";
+
+                /*usuario com entrada impar*/
+            } else if (usuario.equals("impar") && numero == 1 && i == 1) {
+                resultado = "usuário escolheu 'impar' e o nº 1\n";
+                resultado += "máquina escolheu 'par' e o nº 1\n";
+                resultado += "  Você Perdeu!";
+            } else if (usuario.equals("impar") && numero == 2 && i == 2) {
+                resultado = "usuário escolheu 'impar' e o nº 2\n";
+                resultado += "máquina escolheu 'par' e o nº 2\n";
+                resultado += "  Você Perdeu!";
+            } else if (usuario.equals("impar") && numero == 2 && i == 1) {
+                resultado = "usuário escolheu 'impar' e o nº 2\n";
+                resultado += "máquina escolheu 'par' e o nº 1\n";
+                resultado += "  Você Ganhou!";
+            } else if (usuario.equals("impar") && numero == 1 && i == 2) {
+                resultado = "usuário escolheu 'impar' e o nº 1\n";
+                resultado += "máquina escolheu 'par' e o nº 2\n";
+                resultado += "  Você Ganhou!";
             }
 
+            /*Saida*/
+            JOptionPane.showMessageDialog(null, resultado);
+
         } else {
-            System.out.println("Número inválido!");
+            JOptionPane.showMessageDialog(null, "Ação inválida");
         }
 
-        /*Saida*/
-        JOptionPane.showMessageDialog(null,"usuário <" + usuario + "> <" + numero + "> CONTRA máquina <" + i + "> " +" RESULTADO " + soma + " " + resultado);
-       
-        
     }
-
 }
