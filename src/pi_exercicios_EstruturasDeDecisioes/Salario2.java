@@ -29,24 +29,26 @@ public class Salario2 {
             JOptionPane.showMessageDialog(null, "O Funcionário " + NomeFuncionario + " trabalhou " + HorasTrabalhadas + " horas, R$" + nv1 + " por hora e deve receber R$" + Salario);
         }
         /*processamento (nivel 2)*/
-        if (Nivel == 2) {
+        else if (Nivel == 2) {
             Salario = nv2 * HorasTrabalhadas;
             JOptionPane.showMessageDialog(null, "O Funcionário " + NomeFuncionario + " trabalhou " + HorasTrabalhadas + " horas, R$" + nv2 + " por hora e deve receber R$" + Salario);
         }
         /*processamento (nivel 3)*/
-        if (Nivel == 3) {
+        else if (Nivel == 3) {
             Salario = nv3 * HorasTrabalhadas;
             JOptionPane.showMessageDialog(null, "O Funcionário " + NomeFuncionario + " trabalhou " + HorasTrabalhadas + " horas, R$" + nv3 + " por hora e deve receber R$" + Salario);
         }
         /*processamento (nivel 4)*/
-        if (Nivel == 4) {
+        else if (Nivel == 4) {
             Salario = nv4 * HorasTrabalhadas;
             JOptionPane.showMessageDialog(null, "O Funcionário " + NomeFuncionario + " trabalhou " + HorasTrabalhadas + " horas, R$" + nv4 + " por hora e deve receber R$" + Salario);
         }
         /*processamento (nivel 5)*/
-        if (Nivel == 5) {
+        else if (Nivel == 5) {
             Salario = nv5 * HorasTrabalhadas;
             JOptionPane.showMessageDialog(null, "O Funcionário " + NomeFuncionario + " trabalhou " + HorasTrabalhadas + " horas, R$" + nv5 + " por hora e deve receber R$" + Salario);
+        }else {
+        JOptionPane.showMessageDialog(null, "O Nivel não foi fornecido corretamente!");
         }
 
     }
