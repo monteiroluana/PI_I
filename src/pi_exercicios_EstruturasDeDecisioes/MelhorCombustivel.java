@@ -17,11 +17,14 @@ public class MelhorCombustivel {
         double CustAlcool = Double.parseDouble(JOptionPane.showInputDialog("Valor do Álcool"));
         double KmlGasolina = Double.parseDouble(JOptionPane.showInputDialog("Km/l com Gasolina"));
         double CustGasolina = Double.parseDouble(JOptionPane.showInputDialog("Valor da Gasolina"));
-        double alcool = KmlAlcool*CustAlcool;
-        double gasolina = KmlGasolina*CustGasolina;
-        
-        if (alcool<gasolina){JOptionPane.showMessageDialog(null, "melhor opção para abastercer: Álcool  "+alcool);}
-        else {JOptionPane.showMessageDialog(null, "melhor opção para abastercer: Gasolina  "+gasolina);}
+        double alcool = KmlAlcool * CustAlcool;
+        double gasolina = KmlGasolina * CustGasolina;
+
+        if (alcool < gasolina) {
+            JOptionPane.showMessageDialog(null, "melhor opção para abastercer: Álcool");
+        } else {
+            JOptionPane.showMessageDialog(null, "melhor opção para abastercer: Gasolina");
+        }
         /*Processamento*/
     }
 }
