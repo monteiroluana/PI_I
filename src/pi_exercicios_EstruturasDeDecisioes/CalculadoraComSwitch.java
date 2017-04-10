@@ -15,7 +15,7 @@ public class CalculadoraComSwitch {
 
         System.out.print("1º número: ");
         double n1 = console.nextDouble();
-        System.out.print("Operação: ");
+        System.out.print("Operacao (+  -  *  /):  ");
         String operacao = console.next();
         System.out.print("2º número:");
         double n2 = console.nextDouble();
