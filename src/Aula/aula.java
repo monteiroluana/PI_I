@@ -30,6 +30,8 @@ public class aula {
         boolean numeroValido = false;
         double n = 0;
         do {
+            
+            /*Tratando o Erro*/
             try {
                 System.out.println(mensagem);
                 n = Double.parseDouble(console.nextLine());
@@ -51,5 +53,6 @@ public class aula {
         }
     }
 
+   
 
 }
