@@ -17,7 +17,7 @@ public class JogoDaVelha {
         Random rng = new Random();
 
         /*Variaveis ALL*/
-        String p1 = "", p2 = "", p3 = "", p4 = "", p5 = "", p6 = "", p7 = "", p8 = "", p9 = "";
+        String p1 = ".", p2 = ".", p3 = ".", p4 = ".", p5 = ".", p6 = ".", p7 = ".", p8 = ".", p9 = ".";
         String vez = "", posicao, pAnterior = "0";
 
         int opcaoDeJogo = 0;
@@ -113,33 +113,33 @@ public class JogoDaVelha {
                         OBS: se eu deixar sem fazer essa verificação, o código vai mostrar um
                         vencedor quando as variáveis estiverem vazias.
                          */
-                        if (!p1.isEmpty() && p1.equals(p2) && p1.equals(p3)) {
+                        if (!p1.equals(".") && p1.equals(p2) && p1.equals(p3)) {
                             System.out.println(p1 + " VENCEU!");
                             break;
-                        } else if (!p2.isEmpty() && p2.equals(p5) && p5.equals(p8)) {
+                        } else if (!p2.equals(".") && p2.equals(p5) && p5.equals(p8)) {
                             System.out.println(p2 + " VENCEU!");
                             break;
-                        } else if (!p3.isEmpty() && p3.equals(p6) && p6.equals(p9)) {
+                        } else if (!p3.equals(".") && p3.equals(p6) && p6.equals(p9)) {
                             System.out.println(p3 + " VENCEU!");
                             break;
 
-                        } else if (!p1.isEmpty() && p1.equals(p2) && p2.equals(p3)) {
+                        } else if (!p1.equals(".") && p1.equals(p2) && p2.equals(p3)) {
                             System.out.println(p1 + " VENCEU!");
                             break;
-                        } else if (!p4.isEmpty() && p4.equals(p5) && p5.equals(p6)) {
+                        } else if (!p4.equals(".") && p4.equals(p5) && p5.equals(p6)) {
                             System.out.println(p4 + " VENCEU!");
                             break;
-                        } else if (!p7.isEmpty() && p7.equals(p8) && p8.equals(p9)) {
+                        } else if (!p7.equals(".") && p7.equals(p8) && p8.equals(p9)) {
                             System.out.println(p7 + " VENCEU!");
                             break;
 
-                        } else if (!p1.isEmpty() && p1.equals(p5) && p5.equals(p9)) {
+                        } else if (!p1.equals(".") && p1.equals(p5) && p5.equals(p9)) {
                             System.out.println(p1 + " VENCEU!");
                             break;
-                        } else if (!p3.isEmpty() && p3.equals(p5) && p5.equals(p7)) {
+                        } else if (!p3.equals(".") && p3.equals(p5) && p5.equals(p7)) {
                             System.out.println(p3 + " VENCEU!");
                             break;
-                        } else if (!p1.isEmpty() && !p2.isEmpty() && !p3.isEmpty() && !p4.isEmpty() && !p5.isEmpty() && !p6.isEmpty() && !p7.isEmpty() && !p8.isEmpty() && !p9.isEmpty()) {
+                        } else if (!p1.equals(".") && !p2.equals(".") && !p3.equals(".") && !p4.equals(".") && !p5.equals(".") && !p6.equals(".") && !p7.equals(".") && !p8.equals(".") && !p9.equals(".")) {
                             System.out.println("EMPATE!");
                             break;
 
@@ -228,33 +228,33 @@ public class JogoDaVelha {
                         System.out.println(Tabuleiro);
 
                         /*VERIFICANDO SE TEM UM VENCEDOR*/
-                        if (!p1.isEmpty() && p1.equals(p2) && p1.equals(p3)) {
+                        if (!p1.equals(".") && p1.equals(p2) && p1.equals(p3)) {
                             System.out.println(p1 + " VENCEU!");
                             break;
-                        } else if (!p2.isEmpty() && p2.equals(p5) && p5.equals(p8)) {
+                        } else if (!p2.equals(".") && p2.equals(p5) && p5.equals(p8)) {
                             System.out.println(p2 + " VENCEU!");
                             break;
-                        } else if (!p3.isEmpty() && p3.equals(p6) && p6.equals(p9)) {
+                        } else if (!p3.equals(".") && p3.equals(p6) && p6.equals(p9)) {
                             System.out.println(p3 + " VENCEU!");
                             break;
 
-                        } else if (!p1.isEmpty() && p1.equals(p2) && p2.equals(p3)) {
+                        } else if (!p1.equals(".") && p1.equals(p2) && p2.equals(p3)) {
                             System.out.println(p1 + " VENCEU!");
                             break;
-                        } else if (!p4.isEmpty() && p4.equals(p5) && p5.equals(p6)) {
+                        } else if (!p4.equals(".") && p4.equals(p5) && p5.equals(p6)) {
                             System.out.println(p4 + " VENCEU!");
                             break;
-                        } else if (!p7.isEmpty() && p7.equals(p8) && p8.equals(p9)) {
+                        } else if (!p7.equals(".") && p7.equals(p8) && p8.equals(p9)) {
                             System.out.println(p7 + " VENCEU!");
                             break;
 
-                        } else if (!p1.isEmpty() && p1.equals(p5) && p5.equals(p9)) {
+                        } else if (!p1.equals(".") && p1.equals(p5) && p5.equals(p9)) {
                             System.out.println(p1 + " VENCEU!");
                             break;
-                        } else if (!p3.isEmpty() && p3.equals(p5) && p5.equals(p7)) {
+                        } else if (!p3.equals(".") && p3.equals(p5) && p5.equals(p7)) {
                             System.out.println(p3 + " VENCEU!");
                             break;
-                        } else if (!p1.isEmpty() && !p2.isEmpty() && !p3.isEmpty() && !p4.isEmpty() && !p5.isEmpty() && !p6.isEmpty() && !p7.isEmpty() && !p8.isEmpty() && !p9.isEmpty()) {
+                        } else if (!p1.equals(".") && !p2.equals(".") && !p3.equals(".") && !p4.equals(".") && !p5.equals(".") && !p6.equals(".") && !p7.equals(".") && !p8.equals(".") && !p9.equals(".")) {
                             System.out.println("EMPATE!");
                             break;
 
